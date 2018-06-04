@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*
+div {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}*/
+div {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	background-color: yellow;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+/*position*/
+.demo {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background-color: red;
+	opacity: 0.5; /*透明度*/
+}
+.box {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}

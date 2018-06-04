@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>两个BUG</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/twoBUG.css">
+</head>
+<body>
+	<!-- 
+		BUG(margin塌陷):margin-top
+		解决方法：bfc: block format context：
+		
+		如何出发一个盒子的bfc。
+		postion:absolute;
+		display:inline-block;
+		float:left/right;
+		overflow:hidden;
+		针对需求选取不同的方法，不同的解决方法会引起新的问题。所以只能叫弥补方法。
+	 -->
+	<div class="wrapper">
+		<div class="content"></div>
+	</div>
+	<!-- 
+		BUG(margin合并)：
+		不能因为改BUG而改html代码(改结构)，直接用数学方法解决
+	 -->
+	 <span class="box1">123</span>
+	 <span class="box2">234</span>
+
+	 <div class="demo1">123</div>
+	 <div class="demo2">324</div>
+	 <!--  -->
+</body>
+</html>

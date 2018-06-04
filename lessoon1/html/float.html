@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浮动模型</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/float.css">
+	<!-- 
+		学完HTML+CSS后：
+		重写淘宝网站： 自己先写一遍，然后再看视频找自己的问题以及改进的地方。
+	 -->
+</head>
+<body>
+<!-- 
+	三大模型： 盒模型、层模型、浮动模型
+	float:浮动元素产生了浮动流
+		所有产生了浮动流的元素，块级元素看不到它们，产生了bfc的元素和文本属类(inline)的元素以及文本都能看到浮动元素。
+	解决方法 (不能更改结构)：
+		clear属性( clear : left/right/both ;)
+		伪元素：()
+
+
+	position:absolute;
+	float:left/right;
+	打内部把元素转换成inline-block元素
+
+	浮动用途：
+		1.使文字与图片顶部对齐(文字"环抱"图片)。
+ -->
+ 	<span>很帅</span>
+ 	<div class="wrapper">
+ 		<div class="content">1</div>
+ 		<div class="content">2</div>
+ 		<div class="content">3</div>
+ 		<!-- <p class="clear">sadsad</p> -->
+ 	</div>
+ 	<p>dsada</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	color: #424242;
+}
+.list-item {
+	display: block;
+
+}
+.list-item-block{
+	display: inline-block;
+	padding:5px 5px 10px 5px;
+}
+.list-item-block:hover{
+	/*border-radius: 15px;*/
+	/*background-color: yellow;*/
+	color: #badc00;
+}
+.list-item-block-liang{
+	color: #badc00;
+	display: inline-block;
+	padding:5px 5px 10px 5px;
+}

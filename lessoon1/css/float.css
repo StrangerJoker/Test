@@ -1,0 +1,37 @@
+*{
+	padding: 0;
+	margin:0;
+	color: #424242;
+	font-family: arial;
+}
+
+.content {
+	float: left;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+}
+
+.wrapper {
+	border: 1px solid black;
+}
+.clear{
+	clear: both;
+}
+/*
+	伪元素(行级元素) 前面一个后面一个
+	本生就存在,通过css选中
+*/
+span::before{
+	content: "韦德";
+}
+span::after{
+	content: "";
+}
+.wrapper::after{
+	/*content必须写，固定写法*/
+	content: "";
+	display: block;
+	clear: both;
+}
